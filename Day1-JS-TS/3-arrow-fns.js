@@ -7,10 +7,12 @@ function sayHi() {
 
 // After
 const sayHi2 = () => {
-  console.log('hi');	
+  console.log('hi');
 };
 
 // Even shorter
 const sayHi3 = () => console.log('hi');
 
+sayHi();
+sayHi2();
 sayHi3();
