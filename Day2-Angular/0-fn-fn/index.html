@@ -1,0 +1,31 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      function f1(success, successCallback) {
+        if (success) {
+          return successCallback;
+        } else {
+          console.error('Something went wrong. Success is falsy.');
+        }
+      }
+
+      function f2() {
+        return 'hi from f2';
+      }
+
+      console.log(
+        f1(
+          // param1
+          true,
+
+          // param2
+          function() {
+            console.log('this is the success callback');
+          }
+        )
+      );
+</script>
+  </body>
+</html>
